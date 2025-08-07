@@ -1,0 +1,20 @@
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# APIキー
+*.key
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+*.log

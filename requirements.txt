@@ -1,0 +1,36 @@
+# Web Framework
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+
+# LLM APIs
+openai==1.12.0
+anthropic==0.18.1
+google-generativeai==0.3.2
+
+# PDF Processing
+pdfplumber==0.10.3
+PyPDF2==3.0.1
+
+# Text Analysis
+nltk==3.8.1
+textstat==0.7.3
+
+# Data Processing
+numpy==1.26.4
+pandas==2.2.0
+
+# Web Search
+tavily==0.1.0
+
+# Environment & Config
+python-dotenv==1.0.1
+
+# HTTP Requests
+requests==2.31.0
+
+# Utilities
+pydantic==2.6.1
+
+# Optional: Caching
+redis==5.0.1
