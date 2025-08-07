@@ -1,0 +1,250 @@
+.App {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.App-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.App-header p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.App-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.input-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.input-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.title-input,
+.body-input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.title-input:focus,
+.body-input:focus,
+select:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.body-input {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group.checkbox label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.generate-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.generate-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c00;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.response-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.response-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.response-content {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.response-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+  margin: 0 0 1rem 0;
+}
+
+.metadata {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.metadata span {
+  display: flex;
+  align-items: center;
+}
+
+.tournament-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.tournament-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.round {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.round h4 {
+  margin: 0 0 1rem 0;
+  color: #555;
+}
+
+.match {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.match-info {
+  font-weight: 500;
+}
+
+.scores {
+  color: #666;
+}
+
+.winner {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .App-main {
+    padding: 1rem;
+  }
+  
+  .input-section,
+  .response-section {
+    padding: 1rem;
+  }
+  
+  .match {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .metadata {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  background-color: #f0f0f0;
+}
